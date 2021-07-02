@@ -1,0 +1,11 @@
+.env
+*.json
+*.sqlite
+node_modules
+FEATURES.md
+__test__
+embeds.js
+*.jpg
+*.jpeg
+*.png
+*.gif
