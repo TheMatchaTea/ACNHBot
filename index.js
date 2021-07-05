@@ -17,7 +17,7 @@ const sqlize = new Sequelize('database', 'user', 'password', {
 
 const UsersTable = sqlize.define('Users', {
   user_id: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.STRING,
     unique: true,
     allowNull: false,
     primaryKey: true
@@ -67,7 +67,12 @@ const UsersTable = sqlize.define('Users', {
   daily_tasks: {
     type: DataTypes.TEXT,
     allowNull: false,
-    defaultValue: ""
+    defaultValue: "[]"
+  },
+  days_playing: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+    defaultValue: 0
   }
 });
 
